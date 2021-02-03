@@ -11,9 +11,15 @@
                         <span>@Model.Price.ToString("c")</span>
                     </div>
                     <div class="pw_meta">
-                     
+
                         <small class="text-muted">@Model.ShortDescription</small>
-                       
+
+                    </div>
+                    <div class="addToCart">
+                        <p class="button">
+                            <a class="btn btn-primary" asp-controller="ShoppingCart" asp-action="AddToShoppingCart"
+                               asp-route-bookId="@Model.BookId"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                        </p>
                     </div>
                 </div>
             </div>
