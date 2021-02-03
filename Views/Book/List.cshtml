@@ -1,9 +1,12 @@
 ﻿@model BooksListViewModel
 
+<div class="container">
+    <div class="row justify-content-center">
+        <h1>@Model.CurrentGenre</h1>
 
-<h1>@Model.CurrentGenre</h1>
-
-@foreach (var book in Model.Books)
-{
-<partial name="_BookCard" model="book" />
-}
+        @foreach (var book in Model.Books)
+        {
+            <partial name="_BookCard" model="book" />
+        }
+        </div>
+    </div>

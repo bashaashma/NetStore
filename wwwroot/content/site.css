@@ -5,16 +5,35 @@
  */
 
 body {
-    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    background-image: url('/images/pattern.png');
+    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     background-repeat: repeat;
     font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    
+}
+.row {
+     margin-top: 30px; 
+}
+.bg-light {
+    background-color: #ffc430 !important;
 }
 
 .slide-image {
     width: 100%;
 }
-
+.navbar {
+    background-image: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
 .zoom {
     padding: 50px;
     background-color: green;
@@ -28,6 +47,15 @@ body {
     transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
+.carousel-item img {
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 550px;
+    max-height: 550px;
+    width: auto;
+    object-fit: cover;
+}
 .carousel-holder {
     margin-bottom: 30px;
 }
@@ -73,9 +101,8 @@ footer {
 }
 
 .navbar-inverse {
-    background-color: #a593c2;
-    border-color: #a593c2;
-  
+    background-color: #d8bc7d;
+    border-color: #d8bc7d;
 }
 
 .nav.navbar-nav.navbar-right li a {
@@ -83,7 +110,18 @@ footer {
     font-size: 1.2em;
 
 }
-
+p.card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+h5.card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 .navbar .nav > li > a {
     font-size: 1.2em;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -102,13 +140,11 @@ footer {
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
-
-    background-color: #fcaeae !important;
-    border-color: #fba1a1 !important;
+    background-color: #cea43c !important;
+    border-color: #cea43c !important;
 }
 
-.btn
-{
-    background-color: #fcaeae !important;
-    border-color: #fba1a1 !important;
+.btn {
+    background-color: #ffc430 !important;
+    border-color: #cea43c !important;
 }

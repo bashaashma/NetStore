@@ -2,15 +2,19 @@
 
 
 <partial name="_Carousel" />
+<div class="container">
+    <div class="row justify-content-center">
+        <h3>Books of the week</h3>
+        <h4>Our weekly selection - just for you!</h4>
 
-<h2>Books of the week</h2>
-<h4>Our weekly selection - just for you!</h4>
+       
 
-<div class="row">
+            @foreach (var book in Model.BooksOfTheWeek)
+            {
+                <partial name="_BookCard" model="book" />
+            }
 
-    @foreach (var book in Model.BooksOfTheWeek)
-    {
-        <partial name="_BookCard" model="book" />
-    }
+       
 
+</div>
 </div>
