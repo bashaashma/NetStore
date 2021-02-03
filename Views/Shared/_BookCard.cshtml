@@ -1,26 +1,21 @@
 ﻿@model Book
-
-        <div class="col-4">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="@Model.ImageThumbnailUrl" alt="" data-holder-rendered="true">
-                <div class="card-body">
-                    <h5 class="card-title"><a class="card-link" asp-controller="Book" asp-action="Details" asp-route-id="@Model.BookId">@Model.Name</a></h5>
-                   
-                        <p class="card-text">@Model.Price.ToString("c")</p>
-
-                    <p class="card-text">@Model.ShortDescription</p>
-                   
-
-                    <div class="addToCart">
-                      
-                            <a class="btn btn-primary"
-                               asp-controller="ShoppingCart"
-                               asp-action="AddToShoppingCart"
-                               asp-route-bookId="@Model.BookId">Add to cart</a>
+   
+        <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="boxs project_widget">
+                <div class="pw_img">
+                    <img class="img-responsive" src="@Model.ImageThumbnailUrl" alt="About the image">
+                </div>
+                <div class="pw_content">
+                    <div class="pw_header">
+                        <h6><a asp-controller="Book" asp-action="Details" asp-route-id="@Model.BookId">@Model.Name</a></h6>
+                        <span>@Model.Price.ToString("c")</span>
+                    </div>
+                    <div class="pw_meta">
+                     
+                        <small class="text-muted">@Model.ShortDescription</small>
                        
-                   
+                    </div>
                 </div>
             </div>
-        </div>
-        </div>
-
+            </div>
+       

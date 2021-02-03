@@ -1,9 +1,7 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace NetStore.Models
 {
@@ -62,7 +60,7 @@ namespace NetStore.Models
 
         [BindNever]
         [ScaffoldColumn(false)]
-        public double OrderTotal { get; set; }
+        public decimal OrderTotal { get; set; }
 
         [BindNever]
         [ScaffoldColumn(false)]

@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace NetStore.Models
 {
-    public class MockGenreRepository: IGenreRepository
+    public class MockGenreRepository : IGenreRepository
     {
         public IEnumerable<Genre> AllGenres =>
             new List<Genre>

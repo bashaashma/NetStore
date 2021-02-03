@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NetStore.Models;
 
 namespace NetStore.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210203100157_InitialDisweek")]
+    partial class InitialDisweek
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -345,7 +347,7 @@ namespace NetStore.Migrations
                             ImageThumbnailUrl = "https://images-na.ssl-images-amazon.com/images/I/51erHMLhIzL.jpg",
                             ImageUrl = "https://images-na.ssl-images-amazon.com/images/I/51erHMLhIzL.jpg",
                             InStock = false,
-                            IsBookOfTheWeek = false,
+                            IsBookOfTheWeek = true,
                             LongDescription = "Four adventurous siblings—Peter, Susan, Edmund, and Lucy Pevensie—step through a wardrobe door and into the land of Narnia, a land frozen in eternal winter and enslaved by the power of the White Witch. But when almost all hope is lost, the return of the Great Lion, Aslan, signals a great change . . . and a great sacrifice. Open the door and enter a new world! The Lion, the Witch and the Wardrobe is the second book in C.S.Lewis's classic fantasy series, which has been captivating readers of all ages with a magical land and unforgettable characters for over sixty years",
                             Name = "The Lion, the Witch and the Wardrobe (The Chronicles of Narnia)",
                             Price = 15.95m,
@@ -384,7 +386,7 @@ namespace NetStore.Migrations
                             ImageThumbnailUrl = "https://images-na.ssl-images-amazon.com/images/I/91RQ5d-eIqL.jpg",
                             ImageUrl = "https://images-na.ssl-images-amazon.com/images/I/91RQ5d-eIqL.jpg",
                             InStock = true,
-                            IsBookOfTheWeek = false,
+                            IsBookOfTheWeek = true,
                             LongDescription = "Percy Jackson is a good kid, but he can't seem to focus on his schoolwork or control his temper. And lately, being away at boarding school is only getting worse-Percy could have sworn his pre-algebra teacher turned into a monster and tried to kill him.",
                             Name = "The Lightning Thief (Percy Jackson and the Olympians, Book 1)",
                             Price = 15.95m,

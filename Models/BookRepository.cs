@@ -1,12 +1,10 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 
 namespace NetStore.Models
 {
-    public class BookRepository: IBookRepository
+    public class BookRepository : IBookRepository
     {
         private readonly AppDbContext _appDbContext;
 

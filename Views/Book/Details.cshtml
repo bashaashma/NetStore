@@ -1,69 +1,66 @@
 ﻿
 @model Book
+
+
+<div class="col-md-3">
+
+    <img src="@Model.ImageUrl" alt="" class="w-100" />
+</div>
+<!-- /.col-md-6 -->
+<div class="col-md-6">
+    <h3 class="pro-d-title">
+        @Model.Name
+    </h3>
+    <p>
+        @Model.LongDescription
+    </p>
     
-            <div class="col-md-3">
+    <div class="m-bot15"> <strong>Price : </strong>  <span class="pro-price">@Model.Price</span></div>
 
-                <img src="@Model.ImageUrl" alt="" class="w-100" />
-            </div>
-            <!-- /.col-md-6 -->
-            <div class="col-md-6">
-
-                <div class="row align-items-center h-100">
-                    <div class="col">
-                        <h4 class="display-3">@Model.Name</h4>
-                        <h5 class="display-3">@Model.Price</h5>
-                        <p class="lead">
-                            @Model.LongDescription
-                            <br /><br />
-                        </p>
-                        <div class="addToCart">
-                            <p class="button">
-                                <a class="btn btn-primary" asp-controller="ShoppingCart" asp-action="AddToShoppingCart"
-                                   asp-route-bookId="@Model.BookId">Add to cart</a>
-                            </p>
-                        </div>
-
-
-                    </div>
-                </div>
-
-            </div>
-            <!-- /.col-md-6 -->
-
-      
    
-                @*<img src="@Model.ImageUrl" style="height:200px; margin-left:-15px;" />
-            </div>
-            <div class="col-xs-6">
-                <h3 class="pull-right">@Model.Price</h3>
-                <h3>
-                    <a href="#">@Model.Name</a>
-                </h3>
-                <h4>@Model.ShortDescription</h4>
-                <p style="font-size:10px; color:#03225C;">@Model.LongDescription</p>
-                <div class="addToCart">
-                    <p class="button">
-                        <a class="btn btn-primary" asp-controller="ShoppingCart" asp-action="AddToShoppingCart"
-                           asp-route-bookId="@Model.BookId">Add to cart</a>
-                    </p>
-                </div>
-            </div>*@
-       
+        <div class="addToCart">
+    <p class="button">
+        <a class="btn btn-primary" asp-controller="ShoppingCart" asp-action="AddToShoppingCart"
+           asp-route-bookId="@Model.BookId"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+    </p>
+</div>
 
-        @*<div class="thumbnail">
-                <img alt="@Model.Name" src="@Model.ImageUrl">
-                <div class="caption-full">
-                    <h3 class="pull-right">@Model.Price</h3>
-                    <h3>
-                        <a href="#">@Model.Name</a>
-                    </h3>
-                    <h4>@Model.ShortDescription</h4>
-                    <p>@Model.LongDescription</p>
-                    <div class="addToCart">
-                        <p class="button">
-                            <a class="btn btn-primary" asp-controller="ShoppingCart" asp-action="AddToShoppingCart"
-                               asp-route-bookId="@Model.BookId">Add to cart</a>
-                        </p>
-                    </div>
-                </div>
-            </div>*@
+  
+</div>
+
+<!-- /.col-md-6 -->
+@*<img src="@Model.ImageUrl" style="height:200px; margin-left:-15px;" />
+    </div>
+    <div class="col-xs-6">
+        <h3 class="pull-right">@Model.Price</h3>
+        <h3>
+            <a href="#">@Model.Name</a>
+        </h3>
+        <h4>@Model.ShortDescription</h4>
+        <p style="font-size:10px; color:#03225C;">@Model.LongDescription</p>
+        <div class="addToCart">
+            <p class="button">
+                <a class="btn btn-primary" asp-controller="ShoppingCart" asp-action="AddToShoppingCart"
+                   asp-route-bookId="@Model.BookId">Add to cart</a>
+            </p>
+        </div>
+    </div>*@
+
+
+@*<div class="thumbnail">
+        <img alt="@Model.Name" src="@Model.ImageUrl">
+        <div class="caption-full">
+            <h3 class="pull-right">@Model.Price</h3>
+            <h3>
+                <a href="#">@Model.Name</a>
+            </h3>
+            <h4>@Model.ShortDescription</h4>
+            <p>@Model.LongDescription</p>
+            <div class="addToCart">
+                <p class="button">
+                    <a class="btn btn-primary" asp-controller="ShoppingCart" asp-action="AddToShoppingCart"
+                       asp-route-bookId="@Model.BookId">Add to cart</a>
+                </p>
+            </div>
+        </div>
+    </div>*@

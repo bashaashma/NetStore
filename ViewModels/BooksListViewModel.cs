@@ -1,8 +1,5 @@
-﻿using System;
+﻿using NetStore.Models;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using NetStore.Models;
 
 namespace NetStore.ViewModels
 {
