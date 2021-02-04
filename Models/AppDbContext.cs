@@ -48,7 +48,7 @@ namespace NetStore.Models
             modelBuilder.Entity<Book>().HasData(new Book
             {
                 BookId = 2,
-                Name = "The Fellowship of the Ring: Being the First Part of The Lord of the Rings (1)",
+                Name = "The Fellowship of the Ring",
                 Price = 18.95M,
                 ShortDescription = "The first volume in J.R.R. Tolkien's epic adventure THE LORD OF THE RINGS One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them.",
                 LongDescription =
@@ -97,7 +97,7 @@ namespace NetStore.Models
             modelBuilder.Entity<Book>().HasData(new Book
             {
                 BookId = 5,
-                Name = "False Assurances: Ben Porter Series - Book One",
+                Name = "False Assurances: Ben Porter Series",
                 Price = 13.95M,
                 ShortDescription = "A thoroughly riveting two-novel debut introducing a compelling new hero",
                 LongDescription =
@@ -130,7 +130,7 @@ namespace NetStore.Models
             modelBuilder.Entity<Book>().HasData(new Book
             {
                 BookId = 7,
-                Name = "The Lion, the Witch and the Wardrobe (The Chronicles of Narnia)",
+                Name = "The Lion, the Witch and the Wardrobe",
                 Price = 15.95M,
                 ShortDescription = "A beautiful paperback edition of The Lion, the Witch and the Wardrobe, book two in the classic fantasy series The Chronicles of Narnia",
                 LongDescription =
@@ -163,7 +163,7 @@ namespace NetStore.Models
             modelBuilder.Entity<Book>().HasData(new Book
             {
                 BookId = 9,
-                Name = "Thinblade (Sovereign of the Seven Isles Book 1)",
+                Name = "Thinblade ",
                 Price = 15.95M,
                 ShortDescription = "The air stilled. The room fell silent. A shockwave passed through them. Everyone froze, faces white with fear. The ancient evil had awakened…",
                 LongDescription =
@@ -179,7 +179,7 @@ namespace NetStore.Models
             modelBuilder.Entity<Book>().HasData(new Book
             {
                 BookId = 10,
-                Name = "The Lightning Thief (Percy Jackson and the Olympians, Book 1)",
+                Name = "The Lightning Thief",
                 Price = 15.95M,
                 ShortDescription = "Percy Jackson is about to be kicked out of boarding school...again. And that's the least of his troubles.",
                 LongDescription =

@@ -282,7 +282,7 @@ namespace NetStore.Migrations
                             InStock = true,
                             IsBookOfTheWeek = true,
                             LongDescription = "In ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, the Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell into the hands of Bilbo Baggins, as told in The Hobbit. In a sleepy village in the Shire, young Frodo Baggins finds himself faced with an immense task, as his elderly cousin Bilbo entrusts the Ring to his care. Frodo must leave his home and make a perilous journey across Middle-earth to the Cracks of Doom, there to destroy the Ring and foil the Dark Lord in his evil purpose.",
-                            Name = "The Fellowship of the Ring: Being the First Part of The Lord of the Rings (1)",
+                            Name = "The Fellowship of the Ring",
                             Price = 18.95m,
                             ShortDescription = "The first volume in J.R.R. Tolkien's epic adventure THE LORD OF THE RINGS One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them."
                         },
@@ -321,7 +321,7 @@ namespace NetStore.Migrations
                             InStock = true,
                             IsBookOfTheWeek = false,
                             LongDescription = "On the morning of July 12, 2017, the FBI Boston field office receives what appears to be a hoax call: a man rescued from the waters off Massachusetts has claimed that his sailboat was hijacked and used to smuggle weapons and terrorists into the United States. With local agents tasked to prepare for an evening Presidential visit to downtown Boston, and with procedures requiring a response to any threat, no matter how unreliable it may seem, FBI administrative staffer Ben Porter is dispatched to investigate the call. Can Ben, untrained in field work and relying only on his wits and intuition, uncover the deadly plot … in time to stop it?",
-                            Name = "False Assurances: Ben Porter Series - Book One",
+                            Name = "False Assurances: Ben Porter Series",
                             Price = 13.95m,
                             ShortDescription = "A thoroughly riveting two-novel debut introducing a compelling new hero"
                         },
@@ -347,7 +347,7 @@ namespace NetStore.Migrations
                             InStock = false,
                             IsBookOfTheWeek = false,
                             LongDescription = "Four adventurous siblings—Peter, Susan, Edmund, and Lucy Pevensie—step through a wardrobe door and into the land of Narnia, a land frozen in eternal winter and enslaved by the power of the White Witch. But when almost all hope is lost, the return of the Great Lion, Aslan, signals a great change . . . and a great sacrifice. Open the door and enter a new world! The Lion, the Witch and the Wardrobe is the second book in C.S.Lewis's classic fantasy series, which has been captivating readers of all ages with a magical land and unforgettable characters for over sixty years",
-                            Name = "The Lion, the Witch and the Wardrobe (The Chronicles of Narnia)",
+                            Name = "The Lion, the Witch and the Wardrobe",
                             Price = 15.95m,
                             ShortDescription = "A beautiful paperback edition of The Lion, the Witch and the Wardrobe, book two in the classic fantasy series The Chronicles of Narnia"
                         },
@@ -373,7 +373,7 @@ namespace NetStore.Migrations
                             InStock = true,
                             IsBookOfTheWeek = true,
                             LongDescription = "When Alexander loses his brother to an assassin’s arrow, he learns that his family protects an ancient secret and reluctantly finds himself at the center of a war that was supposed to have ended long ago. Pursued by dark minions of an ancient enemy, Alexander flees to the mountain city of Glen Morillian where he discovers that he is the heir to the throne of Ruatha,  one of the Seven Isles.",
-                            Name = "Thinblade (Sovereign of the Seven Isles Book 1)",
+                            Name = "Thinblade ",
                             Price = 15.95m,
                             ShortDescription = "The air stilled. The room fell silent. A shockwave passed through them. Everyone froze, faces white with fear. The ancient evil had awakened…"
                         },
@@ -386,7 +386,7 @@ namespace NetStore.Migrations
                             InStock = true,
                             IsBookOfTheWeek = false,
                             LongDescription = "Percy Jackson is a good kid, but he can't seem to focus on his schoolwork or control his temper. And lately, being away at boarding school is only getting worse-Percy could have sworn his pre-algebra teacher turned into a monster and tried to kill him.",
-                            Name = "The Lightning Thief (Percy Jackson and the Olympians, Book 1)",
+                            Name = "The Lightning Thief",
                             Price = 15.95m,
                             ShortDescription = "Percy Jackson is about to be kicked out of boarding school...again. And that's the least of his troubles."
                         },

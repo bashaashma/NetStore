@@ -1,27 +1,34 @@
 ﻿@model Book
-   
-        <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="boxs project_widget">
-                <div class="pw_img">
-                    <img class="img-responsive" src="@Model.ImageThumbnailUrl" alt="About the image">
-                </div>
-                <div class="pw_content">
-                    <div class="pw_header">
-                        <h6><a asp-controller="Book" asp-action="Details" asp-route-id="@Model.BookId">@Model.Name</a></h6>
-                        <span>@Model.Price.ToString("c")</span>
-                    </div>
-                    <div class="pw_meta">
 
-                        <small class="text-muted">@Model.ShortDescription</small>
+    
+                   
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="card border-0 transform-on-hover">
+                        <div class="boxs project_widget">
+                            <div class="pw_img">
+                                <img class="img-responsive" src="@Model.ImageThumbnailUrl" alt="About the image">
 
+
+                                <div class="pw_content">
+                                    <div class="pw_header">
+                                        <h6><a asp-controller="Book" asp-action="Details" asp-route-id="@Model.BookId">@Model.Name</a></h6>
+                                        <span>$@Model.Price</span>
+                                    </div>
+                                    <div class="pw_meta">
+
+                                        <small class="text-muted">@Model.ShortDescription</small>
+
+                                    </div>
+                                    <div class="addToCart">
+                                        <p class="button">
+                                            <a class="btn btn-primary" asp-controller="ShoppingCart" asp-action="AddToShoppingCart"
+                                               asp-route-bookId="@Model.BookId"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
                     </div>
-                    <div class="addToCart">
-                        <p class="button">
-                            <a class="btn btn-primary" asp-controller="ShoppingCart" asp-action="AddToShoppingCart"
-                               asp-route-bookId="@Model.BookId"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            </div>
-       
+            
+    

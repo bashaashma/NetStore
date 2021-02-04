@@ -2,19 +2,22 @@
 
 
 <partial name="_Carousel" />
-<div class="container">
-    <div class="row">
-        <h3>Books of the week</h3>
-        <h4>Our weekly selection - just for you!</h4>
 
-       
+            <section class="gallery-block cards-gallery">
+                <div class="container">
+                    <div class="row">
 
-            @foreach (var book in Model.BooksOfTheWeek)
-            {
-                <partial name="_BookCard" model="book" />
-            }
+                        <h3>Books of the week</h3>
+                        <h4>Our weekly selection - just for you!</h4>
+                        <br>
+                        @foreach (var book in Model.BooksOfTheWeek)
+                        {
+                            <partial name="_BookCard" model="book" />
+                        }
 
-       
+                    </div>
 
-</div>
-</div>
+
+                </div>
+            </section>
+      

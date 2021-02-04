@@ -17,6 +17,8 @@ namespace NetStore.Controllers
             _genreRepository = genreRepository;
         }
 
+        
+
         public ViewResult List(string genre)
         {
             IEnumerable<Book> books;

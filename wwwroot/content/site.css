@@ -182,7 +182,7 @@ i.fas.fa-shopping-cart {
 
 .boxs {
     position: relative;
-    margin-bottom: 30px;
+    
     color: #4d585f;
     background-color: white;
     filter: alpha(opacity=100);
@@ -196,7 +196,7 @@ i.fas.fa-shopping-cart {
 .project_widget .pw_img {
     position: relative;
     overflow: hidden;
-    height: 280px;
+   
 }
 
     .project_widget .pw_img:before {
@@ -223,6 +223,68 @@ i.fas.fa-shopping-cart {
     100% {
         left: 125%
     }
+
+
+}
+
+
+
+.gallery-block {
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+    .gallery-block .heading {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+        .gallery-block .heading h2 {
+            font-weight: bold;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+        }
+
+    .gallery-block.cards-gallery h6 {
+        font-size: 16px;
+       
+    }
+
+    .gallery-block.cards-gallery .card {
+        transition: 0.4s ease;
+    }
+
+        .gallery-block.cards-gallery .card img {
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+        }
+
+    .gallery-block.cards-gallery .card-body {
+        text-align: center;
+    }
+
+        .gallery-block.cards-gallery .card-body p {
+            font-size: 15px;
+        }
+
+    .gallery-block.cards-gallery a {
+        color: #ce9e0d;
+    }
+
+        .gallery-block.cards-gallery a:hover {
+            text-decoration: none;
+        }
+
+    .gallery-block.cards-gallery .card {
+        margin-bottom: 30px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    }
+
+@media (min-width: 576px) {
+
+    .gallery-block .transform-on-hover:hover {
+        transform: translateY(-10px) scale(1.02);
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important;
+    }
 }
 
 @keyframes shine {
@@ -236,7 +298,7 @@ i.fas.fa-shopping-cart {
 }
 
 .project_widget .pw_content .pw_header {
-    padding: 20px;
+    padding: 10px;
     border-bottom: 1px solid #e6eaee
 }
 
@@ -257,6 +319,7 @@ i.fas.fa-shopping-cart {
 .project_widget .pw_content .pw_meta {
     margin: 5px;
     overflow: hidden;
+    height: 42px;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -436,6 +499,7 @@ img.img-responsive {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-top:10px;
 }
 
 a {
@@ -446,4 +510,8 @@ a {
     a:focus, a:hover {
         color: #5b480d;
         text-decoration: none;
+    }
+
+    a.btn.btn-primary {
+        color: #fff;
     }
